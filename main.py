@@ -205,8 +205,8 @@ def scrape_glassdoor(search_request: SearchRequest) -> List[Job]:
             continue
     
     return jobs
-# Serve static files (if you have any CSS/JS/images)
-app.mount("/static", StaticFiles(directory="static"), name="static")
+# # Serve static files (if you have any CSS/JS/images)
+# app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Serve the HTML file as the root route
 @app.get("/")
